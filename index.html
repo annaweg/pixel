@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>PixelTest</title>
+
+	<!-- Bootstrap and css
+	=================================================== -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+  </head>
+
+
+  <body>
+
+	<!-- NAVBAR 
+	=================================================== -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">	
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNavbar" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- NAVBAR TOP --> 
+				<div class="collapse navbar-collapse collapse">
+				<ul class="nav navbar-nav" id="mainNavbar">
+					<li><a href="#"><span class="glyphicon glyphicon-home"><i> Home</i></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-map-marker"><i> Sitemap</i></span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"><i> Login</i></span></a></li>
+				</ul>
+
+
+				<!-- SEARCH -->
+				 <div class="col-lg-4" id="search">  
+					<div class="form-group">
+						<div class="input-group input-group-unstyled">
+							<input type="text" class="form-control" placeholder="Search">
+							<span class="input-group-addon"><span class="glyphicon glyphicon-search" id="mainNavbar"></span>
+							</span>
+						</div>
+					</div>
+				 </div>
+				</div>
+			<!-- added 2 div -->
+			</div>
+		</div>
+	</nav>
+
+	<!--HEADER -->
+	<header>
+
+		<a class="navbar-brand" href="#"><b id="logo-color">Site</b>Logo</a>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" id="headerNav">
+				<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">About</a></li>
+
+
+				<!-- DROPDOWN MENUES -->
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-hidden="true">Features <span class="glyphicon glyphicon-menu-down"></span></a>
+				  	<ul class="dropdown-menu">
+						<li><a href="#">A feature</a></li>
+						<li><a href="#">Another feature</a></li>			
+				  </ul>
+				</li>
+				
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solutions <span class="glyphicon glyphicon-menu-down"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">A solution</a></li>
+						<li><a href="#">Another solution</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>	
+	</header>
+<!-- END HEADER -->
+
+
+	<!-- CAROUSEL 
+	=================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+		<!-- INDICATORS -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- WRAPPER FOR SLIDES -->
+		<div class="carousel-inner" role="listbox">
+
+			<!-- SLIDE 1 -->
+			<div class="item active">
+				<img class="img-responsive" src="images/slider_image.png" alt="mountain road in Lausanne">
+				<div class="container"> 
+					<div class="carousel-caption pull-left">
+						<div class="carousel-caption-text">	
+							<h1>Lorem Ipsum</h1>
+							<p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+							<p><a id="button" class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- SLIDE 2 -->
+			<div class="item">
+				<img class="img-responsive" src="images/image1.png" alt="jetty in Malmö">
+				<div class="container">
+					<div class="carousel-caption pull-left">
+						<div class="carousel-caption-text">
+							<h1>Second slide</h1>
+							<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+							<p><a id="button" class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- SLIDE 3 -->
+			<div class="item">
+				<img class="img-responsive" src="images/image2.png" alt="mountain view Australia">
+				<div class="container">
+					<div class="carousel-caption pull-left">
+						<div class="carousel-caption-text">
+							<h1>Third slide</h1>
+							<p>Cras justo odio, dapibus ac facilisis in.</p>
+							<p><a id="button" class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- END CAROUSEL-INNER -->
+	
+
+	  <!-- LEFT AND RIGHT CONTROLS -->
+	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="control-left" aria-hidden="true"><img src="icons/png/arrow left.png"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+
+	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="control-right" aria-hidden="true"><img src="icons/png/arrow right.png"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<!-- END CAROUSEL -->
+
+
+	<!--GRID 
+	=================================================== -->
+
+	<!-- CONTAINER TO CENTER THE REST OF THE CONTENT-->
+	<div class="container">
+
+	  <!-- IMAGE CIRCLE -->
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-circle" id="img1" src="icons/svg/icon1.svg" width="100" height="100">
+				<h4>OurServices</h4>
+				<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi.</p>
+				<p class="button"><a href="#" class="btn btn-default">Read more</a></p>
+			</div>
+
+			<div class="col-md-4">
+			 	<img class="img-circle" id="img2" src="icons/svg/icon2.svg" width="100" height="100">
+					<h4>Our Services</h4>
+					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur.</p>
+			  		<p class="button"><a href="#" class="btn btn-default">Read more</a></p>
+			</div>
+			
+			<div class="col-md-4">
+				<img class="img-circle" id="img3" src="icons/svg/icon3.svg" width="100" height="100">
+					<h4>Our Services</h4>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula.</p>
+			  		<p class="button"><a href="#" class="btn btn-default">Read more</a></p>
+			</div>
+		</div>
+		<!-- END IMG CIRCLE -->
+
+
+	  	<!-- THUMBNAILS -->
+	  	<div class="row">
+		 	<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<img src="images/image1.png"> 
+					<div class="thumbnail-text">
+						<h4 class="caption">Our Services</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+						<p><a href="#" class="btn-link" role="button"><u><b>Read More</b></u></a></p>
+				  	</div>
+				</div>
+		  	</div>
+
+		  	<div class="row">	
+				<div class="col-sm-12 col-md-4">
+					<div class="thumbnail">
+				 		<img src="images/image2.png">
+				  		<div class="thumbnail-text">
+							<h4 class="caption">Our Services</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt</p>
+							<p><a href="#" class="btn-link" role="button"><u><b>Read More</b></u></a></p>
+				  		</div>
+					</div>
+				</div>
+		  
+
+			<div class="row">	
+				<div class="col-sm-12 col-md-4">
+					<div class="thumbnail">
+				  		<img src="images/image3.png">
+				  		<div class="thumbnail-text">
+							<h4 class="caption">Our Services</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+							<p><a href="#" class="btn-link" role="button"><u><b>Read More</b></u></a></p>
+				  		</div>
+					</div>
+				</div>
+		 	</div>
+		</div>
+
+		<hr>
+		<br>
+
+
+	<!-- LOGOS  
+	=================================================== -->
+		<div class="container">
+			<div class="item active">
+				<div class="row" id="logos" >
+
+					<div class="col-xs-1">
+						<img class="img-responsive" src="icons/svg/arrow left.svg" alt="arrow left" height="20">
+					</div>
+
+					<div class="col-xs-2">
+						<img class="img-responsive" src="images/logo1.svg" alt="logo1" height="100">
+					</div>
+
+					<div class="col-xs-2">
+						<img class="img-responsive" src="images/logo2.svg" alt="logo3"  height="100">
+					</div>
+
+					<div class="col-xs-2">
+						<img class="img-responsive" src="images/logo3.svg" alt="logo2" height="100">
+					</div>
+
+					<div class="col-xs-2">
+						<img class="img-responsive" src="images/logo4.svg" alt="logo1" height="100">
+					</div>
+
+					<div class="col-xs-2">
+						<img class="img-responsive" src="images/logo5.svg" alt="logo3" height="100px">
+					</div>
+
+					<div class="col-xs-1">
+						<img class="img-responsive" src="icons/svg/arrow right.svg" alt="arrow right" height="20">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END LOGOS -->
+
+
+	<!-- INFO 
+	=================================================== -->
+	
+		<div class="container">
+			<div class="row" id="company-info">
+
+				<div class="col-md-4">
+					<h3>About Company AB</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure.</p>
+				</div>
+
+			<div class="col-md-4">
+				<h3>Contact us</h3>
+			</div>
+			
+			<div class="col-md-4">
+				<h3>Subscribe to newsletter</h3>
+				<form class="form form-signup" role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Email">
+						</div>
+					</div>
+					<button id="button" type="submit" class="btn btn-primary">Subscribe</button>
+				</form>	
+			</div>
+		</div>
+	
+
+	<!-- FOOTER 
+	=================================================== -->
+	
+		<footer>
+			<div class="container">
+				<div class="footer-bottom">
+					<div class="container">
+						<p class="pull-left" id="copy">All rights reserved &copy; 2016</p>
+
+						<!-- ICONS -->
+						<ul class="social-icons">
+							<li class="social"><a href="#"><img src="icons/png/social icon-fb.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-G.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-in.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-instagram.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-pinterest.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-twitter.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-vimeo.png"></a></li>
+
+							<li class="social"><a href="#"><img src="icons/png/social icon-youtube.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	</div>
+	</div>
+
+	
+<!-- SCRIPTS
+	=================================================== -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

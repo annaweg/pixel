@@ -1,0 +1,249 @@
+body {
+	font-family: 'Muli', sans-serif;
+	padding-top: 70px;
+}
+
+#button {
+	border-radius: 0; !important;
+	padding: 8px 15px;
+	background-color: #0099ff;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+
+/* ========== NAVBAR ==================== */
+
+.navbar {
+	width: 100%;
+	height: 25px;
+	display: inline-block;
+	color: #fff;
+}
+
+#mainNavbar {
+	color: #fff;
+}
+
+
+#search {
+	float: right;
+	width: 25%;
+	color: white;
+	vertical-align: center;
+	margin-right: -16px;
+}
+
+.input-group-unstyled {
+	height: 15px;
+	float: right;
+	margin-top: 8px;
+	font-size: 12px;
+}
+
+
+#navbar-brand a {
+	padding-left: 150px;
+}
+
+#logo-color {
+	color: #0099ff;
+	font-size: 1.3em;
+}
+
+#headerNav a {
+	color: #000;
+
+}
+
+
+/* ========== CAROUSEL ==================== */
+
+.carousel {
+  margin: 30px 30px 60px 30px;
+}
+
+#myCarousel {
+  height: 500px;
+}
+
+.carousel-caption {
+  height: 50%;
+  width: 450px;
+  top: 120px;
+  left: 80px;
+  bottom: auto;
+  margin-left: 50px;
+  padding: 20px;
+  background: #000; opacity: 0.8;
+  color: #fff;
+  z-index: 10;
+}
+
+.carousel-caption h1{
+  color: #fff;
+  font-size: 45px;
+  line-height: 35px;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 15;
+}
+
+.carousel-caption-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 20px;
+  padding-top: 15px;
+  text-align: left;
+  z-index: 15;
+}
+
+.carousel .item {
+  height: 500px;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.carousel-control {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  height: 1em;
+  z-index: 25;
+}
+
+.carousel-caption-text .btn-lg {
+	margin-top: 20px;
+}
+
+
+/* ========== GRID IMG CIRCLE ==================== */
+
+.img-circle {
+	padding: 20px;
+	z-index: 10;
+	margin: 20px;
+}
+
+#img1 {
+	background-color: #009999;
+	fill: currentColor;
+}
+
+#img2 {
+	background-color: #ff9900;
+	z-index: 20;
+}
+
+#img3 {
+	background-color: #003366;
+}
+
+.caption {
+	color: #fff;
+}
+
+/* ========== GRID THUMBNAIL ==================== */
+
+.thumbnail {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 0 none;
+	box-shadow: none;
+	padding: 0px;
+	background-color: #0099ff;
+	width: 250px;
+	height: 350px;
+}
+
+
+.row .thumbnail-text {
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+
+}
+.row .thumbnail-text .btn-link {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+
+
+/* ========== LOGOS ==================== */
+#logos {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	height: 200px;
+	width: 100%;
+	display: inline-block;
+
+}
+
+
+/* ========== FOOTER ==================== */
+
+#company-info {
+    background-color: #999;
+    color: #fff;
+}
+
+.form-signup {
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.footer-bottom {
+	width: 100%;
+	height: 50px;
+    background-color: #000;
+    display: flex;
+    z-index: 5;
+}
+
+#copy {
+	color: #fff;
+	font-size: 11px;
+	padding-left: 10px;
+	padding-top: 20px;
+	float: left;
+}
+
+.social-icons  {
+	padding: 0 5px;
+	justify-content: right;
+	list-style: none;
+    display: inline-block;
+    float: right;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    z-index: 25;
+}
+
+.social {
+	display: inline-block;
+}
+
+/* ========== RESPONSIVE ==================== */
+
+/* Hide carousel text */
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+}
